@@ -1,4 +1,6 @@
 import requests
+
+
 class Weather:
 
     """
@@ -22,6 +24,8 @@ class Weather:
         # Simplified data for the next 12h
         >>> weather.next_12h_simplified()
 
+        # Sample url to get sky condition items
+        http://openweathermap.org/img/wn/10d@2x.png
     """
 
     def __init__(self, apikey, city=None, lat=None, lon=None):
@@ -53,5 +57,6 @@ class Weather:
         """
         simple_data = []
         for dicty in self.data['list'][:4]:
-            simple_data.append((dicty['dt_txt'], dicty['main']['temp'], dicty['weather'][0]['description']))
+            simple_data.append((dicty['dt_txt'], dicty['main']['temp'],
+                                dicty['weather'][0]['description'], dicty['weather'][0]['icon']))
         return simple_data

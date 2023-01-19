@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
     name='sunnyday-calcetto',
     packages=['sunnyday'],
-    version='1.0.0',
+    version='2.0.0',
     author='Denis Vreshtazi(helped by Ardit Sulce)',
     author_email='vreshtazi21@gmail.com',
     url='https://github.com/denisvreshtazi/Weather-Package',
