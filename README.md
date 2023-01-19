@@ -24,3 +24,6 @@ https://pypi.org/project/sunnyday-calcetto/
 
         # Simplified data for the next 12h
         >>> weather.next_12h_simplified()
+        
+        # Sample url to get sky condition items
+        http://openweathermap.org/img/wn/10d@2x.png
